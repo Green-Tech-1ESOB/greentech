@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Winky+Sans:ital@0;1&display=swap');
+:root {
+    --cor-header: #d58a24;
+    --cor-fundo:  #f4f4f4;
+    --cor-texto1: #3e6606;
+    --cor-texto2: #333;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -12,12 +19,12 @@ h1, h2, h3{
 body {
     font-family: "Open Sans", sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: var(--cor-texto2);
+    background-color: var(--cor-fundo);
 }
 
 header {
-    background-color: #d58a24; 
+    background-color: var(--cor-header); 
     padding: 0.5rem 0; 
     position: sticky; 
     top: 0;
@@ -84,8 +91,7 @@ main {
 }
 
 #banner {
-    background-color: #3e6606; 
-    color: #fff;
+    color: var(--cor-fundo);
     text-align: center;
     padding: 5rem 1rem;
     margin: 20px -20px; 
@@ -112,7 +118,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #3e6606; 
+    color: var(--cor-texto1); 
 }
 
 footer {
@@ -162,7 +168,6 @@ footer {
 
 #banner {
     background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
-    background-color: #3e6606;
     position: relative;
     padding: 6rem 1rem;
 }
@@ -227,7 +232,7 @@ footer {
 }
 
 .sobre-valores h3 {
-    color: #3e6606;
+    color: var(--cor-texto1);
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -241,11 +246,10 @@ footer {
 .valor-icone {
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #3e6606;
 }
 
 .valor-texto h4 {
-    color: #3e6606; 
+    color: var(--cor-texto1); 
     margin-bottom: 0.3rem;
 }
 
@@ -272,11 +276,10 @@ footer {
 .servico-icone {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #3e6606;
 }
 
 .servico-cartao h3 {
-    color: #3e6606;
+    color: var(--cor-texto1);
     margin-bottom: 0.5rem;
 }
 
