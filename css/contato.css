@@ -1,0 +1,152 @@
+:root {
+    --cor-header: #d58a24;
+    --cor-fundo:  #f4f4f4;
+    --cor-texto1: #3e6606;
+    --cor-texto2: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    font-family: "Winky Sans", sans-serif;
+ }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: var(--cor-texto2);
+    background-color: var(--cor-fundo);
+}
+
+header {
+    background-color: var(--cor-header); 
+    padding: 0.5rem 0; 
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+.cabecalho-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    display: flex; 
+    align-items: center; 
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #dbdbdb; 
+}
+
+.logo-imagem {
+    height: 3.5rem;
+    margin-right: 0.5rem; 
+    vertical-align: middle; 
+}
+
+.logo-texto {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right; 
+    margin: 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0 0 15px; 
+}
+
+nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #dbdbdb;
+    text-decoration: underline; 
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover ;
+}
+
+main::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 8%;
+    left: 33%;
+    height: 28em;
+    width: 30em;
+    background: rgb(244 244 244 / 48%);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 2em 1.5em;
+}
+
+.caixas label,input,textarea{
+    display: block;
+    width: 100%;
+    height: 2em;
+    border: none;
+    outline: none;
+}
+
+.caixas label{
+    height: 1.5em;
+}
+
+.caixas textarea{
+    margin-bottom: 2%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 3em;
+    padding: 1%;
+}
+
+.caixas input{
+    margin-bottom: 2%;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding-left: 1%;
+}
+
+#enviar:hover{
+    color: var(--cor-fundo);
+    background-color: var(--cor-header);
+    cursor: pointer;
+}
