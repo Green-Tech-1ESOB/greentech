@@ -1,9 +1,28 @@
+// Váriaveis com os caminhos
 let botao = document.querySelector("#enviar");
-let nome = document.querySelector("#nome");
-let email = document.querySelector("#titulo");
-let titulo = document.querySelector("#email");
-let mensagem = document.querySelector("#mensagem");
+let nomeInput = document.querySelector("#nome");
+let emailInput = document.querySelector("#email");
+let tituloInput = document.querySelector("#titulo");
+let mensagemInput = document.querySelector("#mensagem");
 
+//Função que é ativada a partir do click do botão
 botao.addEventListener('click',function(){
-    // alert('Sua mensagem foi enviada!!');
+
+    //Pega o valor dentro do caminho
+    let nome = nomeInput.value;
+    let email = emailInput.value;
+    let titulo = tituloInput.value;
+    let mensage = mensagemInput.value;
+
+    if (nome === "" || email === "" || titulo === "" || mensagem === ""){
+        alert("Preencha todas as informações!!");
+    }else{
+        alert("Enviado com sucesso!!");
+
+        //Limpa os campos
+        nomeInput.value = ""
+        emailInput.value = ""
+        tituloInput.value = ""
+        mensagemInput.value = ""
+    }
 })
