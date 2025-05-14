@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Winky+Sans:ital@0;1&display=swap');
+
 :root {
     --cor-header: #d58a24;
-    --cor-fundo:  #f4f4f4;
+    --cor-fundo: #f4f4f4;
     --cor-texto1: #3e6606;
     --cor-texto2: #333;
 }
@@ -12,9 +13,11 @@
     box-sizing: border-box;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-family: "Winky Sans", sans-serif;
- }
+}
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -24,9 +27,9 @@ body {
 }
 
 header {
-    background-color: var(--cor-header); 
-    padding: 0.5rem 0; 
-    position: sticky; 
+    background-color: var(--cor-header);
+    padding: 0.5rem 0;
+    position: sticky;
     top: 0;
     z-index: 1000;
 }
@@ -41,21 +44,21 @@ header {
 }
 
 .logo a {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     color: #f4f4f4;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .logo a:hover {
-    color: #dbdbdb; 
+    color: #dbdbdb;
 }
 
 .logo-imagem {
     height: 3.5rem;
-    margin-right: 0.5rem; 
-    vertical-align: middle; 
+    margin-right: 0.5rem;
+    vertical-align: middle;
 }
 
 .logo-texto {
@@ -65,13 +68,13 @@ header {
 
 nav ul {
     list-style: none;
-    text-align: right; 
-    margin: 0; 
+    text-align: right;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 0 0 15px; 
+    margin: 0 0 0 15px;
 }
 
 nav ul li a {
@@ -83,18 +86,18 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #dbdbdb;
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 main {
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 #banner {
     color: var(--cor-fundo);
     text-align: center;
     padding: 5rem 1rem;
-    margin: 20px -20px; 
+    margin: 20px -20px;
 }
 
 #banner h1 {
@@ -110,15 +113,15 @@ section {
     padding: 2rem 0;
     margin-bottom: 1rem;
     background-color: #fff;
-    padding: 2rem 20px; 
+    padding: 2rem 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: var(--cor-texto1); 
+    color: var(--cor-texto1);
 }
 
 footer {
@@ -134,19 +137,19 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .logo {
         margin-bottom: 10px;
     }
-    
+
     nav {
         width: 100%;
     }
-    
+
     nav ul {
         text-align: left;
     }
-    
+
     nav ul li {
         display: block;
         margin: 10px 0;
@@ -192,7 +195,8 @@ footer {
     margin-top: 2rem;
 }
 
-.botao-primario, .botao-secundario {
+.botao-primario,
+.botao-secundario {
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
@@ -203,12 +207,12 @@ footer {
 }
 
 .botao-primario {
-    background-color: #FFC107; 
+    background-color: #FFC107;
     color: #333;
 }
 
 .botao-primario:hover {
-    background-color: #FFA000; 
+    background-color: #FFA000;
 }
 
 #sobre .conteudo-secao {
@@ -226,7 +230,7 @@ footer {
 .sobre-valores {
     flex: 1;
     min-width: 300px;
-    background-color: #E8F5E9; 
+    background-color: #E8F5E9;
     padding: 1.5rem;
     border-radius: 5px;
 }
@@ -249,7 +253,7 @@ footer {
 }
 
 .valor-texto h4 {
-    color: var(--cor-texto1); 
+    color: var(--cor-texto1);
     margin-bottom: 0.3rem;
 }
 
@@ -264,13 +268,13 @@ footer {
     padding: 1.5rem;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .servico-cartao:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .servico-icone {
@@ -293,7 +297,9 @@ footer {
     .contato-conteudo {
         flex-direction: column;
     }
-    .botao-primario, .botao-secundario {
+
+    .botao-primario,
+    .botao-secundario {
         display: block;
         margin: 10px 0;
         text-align: center;
