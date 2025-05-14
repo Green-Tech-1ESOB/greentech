@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/servicos.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho-container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./img/logo_greentech.png" alt="Logo GreenTech" class="logo-imagem">
+                    <span class="logo-texto">GreenTech</span>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="form-container">
+            <div class="description">
+                <h2>Deixe-nos te ajudar!</h2>
+                <p>Nos dê informações sobre o seu campo que a nossa IA irá te guiar</p>
+            </div>
+            <form class="form">
+                <div class="form-group">
+                    <label for="hectares">Quantidade de hectares</label>
+                    <input type="number" id="hectares" name="hectares" required>
+                </div>
+                <div class="form-group">
+                    <label for="localizacao">Onde está localizado?</label>
+                    <select name="state" class="state"></select>
+                    <!-- <input type="text" id="localizacao" name="localizacao" required> -->
+                </div>
+                <div class="form-group">
+                    <label for="tipo-plantacao">Qual é o tipo de plantação?</label>
+                    <input type="text" id="tipo-plantacao" name="tipo-plantacao" required>
+                </div>
+                <div class="form-group">
+                    <label for="tamanho-fazenda">Qual é o tamanho da fazenda?</label>
+                    <input type="text" id="tamanho-fazenda" name="tamanho-fazenda" required>
+                </div>
+                <div class="form-group">
+                    <label for="data">Qual mês você deseja plantar?</label>
+                    <input type="date" name="data" id="data">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <script src="./js/servicos.js"></script>
+</body>
+
+</html>
