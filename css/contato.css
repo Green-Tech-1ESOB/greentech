@@ -105,7 +105,7 @@ main::before{
 #formulario{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     position: absolute;
     top: 8%;
     left: 33%;
@@ -118,6 +118,10 @@ main::before{
     padding: 2em 1.5em;
 }
 
+#formulario .titulo{
+    margin-bottom: 1%;
+}
+
 .forms label,input,textarea{
     display: block;
     width: 100%;
@@ -128,6 +132,7 @@ main::before{
 
 .forms label{
     height: 1.5em;
+    margin-top: 1%;
 }
 
 .forms textarea{
@@ -143,6 +148,11 @@ main::before{
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding-left: 1%;
+}
+
+.forms span{
+    font-size: 15px;
+    color: #b44848;
 }
 
 #enviar:hover{
