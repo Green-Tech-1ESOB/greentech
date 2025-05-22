@@ -107,9 +107,9 @@ main::before{
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    top: 8%;
+    top: 6%;
     left: 33%;
-    height: 28em;
+    height: 29em;
     width: 30em;
     background: rgb(244 244 244 / 48%);
     border-radius: 5px;
