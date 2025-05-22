@@ -4,8 +4,10 @@ let nomeInput = document.querySelector("#nome");
 let emailInput = document.querySelector("#email");
 let tituloInput = document.querySelector("#titulo");
 let mensagemInput = document.querySelector("#mensagem");
+
 let erroNome = document.querySelector("#erro_nome");
 let erroEmail = document.querySelector("#erro_email");
+let erroMensagem = document.querySelector('#erro_mensagem')
 
 nomeInput.addEventListener('input',function(){
     const palavras = nomeInput.value.trim().split(/\s+/); // trim - tira espaço antes e depois / split - palavras em array
@@ -35,6 +37,18 @@ function validarEmail(email) {
 
 }
 
+mensagemInput.addEventListener('input', function(){
+
+    let mensagem = mensagemInput.value.trim();
+
+    if (mensagem.length < 30){
+        erroMensagem.textContent = 'Você deve escrever pelo menos 30 caracteres!!'
+    }else{
+        erroMensagem.textContent = ""
+    }
+
+})
+
 //Função que é ativada a partir do click do botão
 botao.addEventListener('click',function(){
 
@@ -45,6 +59,8 @@ botao.addEventListener('click',function(){
     let mensagem = mensagemInput.value;
 
     const palavras = nome.trim().split(/\s+/);
+
+    let caracteres = mensagem.trim();
 
     if (nome === "" || email === "" || titulo === "" || mensagem === ""){
 
@@ -57,6 +73,10 @@ botao.addEventListener('click',function(){
     }else if (!validarEmail(email)) { //Puxa a resposta com a validação
 
         alert("Digite um e-mail válido!");
+
+    }else if (caracteres.length < 30){
+
+        alert("Escreva uma mensagem com mais de 30 caracteres!!");
 
     }else{
          alert("Enviado com sucesso!!");
