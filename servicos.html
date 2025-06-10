@@ -19,18 +19,20 @@
                     <span class="logo-texto">GreenTech</span>
                 </a>
             </div>
-            <nav>
+            <nav class="main-menu">
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobrenos.html">Sobre Nós</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                  <li><a href="index.html">Início</a></li>
+                  <li><a href="sobrenos.html">Sobre Nós</a></li>
+                  <li><a href="servicos.html">Serviços</a></li>
+                  <li><a href="contato.html">Contato</a></li>
                 </ul>
-            </nav>
+              </nav>
         </div>
     </header>
     <main>
+        
         <section class="form-container">
+            
             <div class="description">
                 <h2>Deixe-nos te ajudar!</h2>
                 <p>Nos dê informações sobre o seu campo que a nossa IA irá te guiar</p>
@@ -62,6 +64,17 @@
         </section>
     </main>
     <script src="./js/servicos.js"></script>
+
+    <script>
+        const currentPage = window.location.pathname.split("/").pop();
+        const menuLinks = document.querySelectorAll(".main-menu a");
+      
+        menuLinks.forEach(link => {
+          if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+          }
+        });
+      </script>
 </body>
 
 </html>

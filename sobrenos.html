@@ -19,18 +19,27 @@
                     <span class="logo-texto">GreenTech</span>
                 </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="sobrenos.html">Sobre Nós</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                </ul>
+            <nav class="main-menu">
+              <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
             </nav>
+            
+            
         </div>
     </header>  
     <main>       
         <section id="sobre">
+
+          <nav class="breadcrumb" aria-label="breadcrumb">
+            <a href="/"> Início</a>
+            <span class="separator">›</span>
+            <span class="current">Sobre Nós</span>
+          </nav>
+          
             <h2>Sobre Nós</h2>
             <div class="conteudo-secao">
               
@@ -81,37 +90,7 @@
                     </div>
 
 
- <!--
-                      <div class="valor-item">
-                        <span class="valor-icone">🌱</span>
-                        <div class="valor-texto">
-                          <h4>Sustentabilidade</h4>
-                          <p>Desenvolvemos soluções que respeitam o meio ambiente.</p>
-                        </div>
-                      </div>
-                      
-                      <div class="valor-item">
-                        <span class="valor-icone">💡</span>
-                        <div class="valor-texto">
-                          <h4>Inovação</h4>
-                          <p>Software personalizado, que se adapta a necessidade de<br>
-                            cada produtor. </p>
-                        </div>
-                      </div>
-                        
-                      <div class="valor-item">
-                        <span class="valor-icone">🤝</span>
-                        <div class="valor-texto">
-                          <h4>Parceria</h4>
-                          <p>Apoiamos pequenos e médios agricultores que sofrem<br>
-                             com questões climáticas.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <img class="img-agro" src="img/img3.jpg" alt="Produtor rural no campo" />
-                    -->
-
+ 
                   </div>
 
                   
@@ -123,5 +102,16 @@
     <footer>
         <p>&copy; 2025 GreenTech. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+      const currentPage = window.location.pathname.split("/").pop();
+      const menuLinks = document.querySelectorAll(".main-menu a");
+    
+      menuLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
 </body>
 </html>

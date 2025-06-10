@@ -15,6 +15,11 @@ main {
     font-family: Arial, sans-serif;
 }
 
+.main-menu a.active {
+    font-weight: bold; 
+    color: #302f2f;
+  }
+
 .description {
     align-self: center;
     flex: 0 0 auto;
