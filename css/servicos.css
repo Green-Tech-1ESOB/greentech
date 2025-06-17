@@ -16,9 +16,9 @@ main {
 }
 
 .main-menu a.active {
-    font-weight: bold; 
+    font-weight: bold;
     color: #302f2f;
-  }
+}
 
 .description {
     align-self: center;
