@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenTech</title>
 
-    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -37,8 +37,8 @@
 
             <div class="titulo">
 
-                <h1>Fale conosco!!</h1>
-                <p>Estamos a disposição para responder suas dúvidas.</p>
+                <h1>Cadastre-se</h1>
+                <p>Faça o seu cadastro aqui para obter uma resposta personalizada!</p>
 
             </div>
 
@@ -52,11 +52,8 @@
                 <input type="email" id="email">
                 <span id="erro_email"></span>
 
-                <label for="titulo">Título</label>
-                <input type="text" id="titulo">
-
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" rows="5" cols="30" maxlength="500"></textarea>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha">
                 <span id="erro_mensagem"></span>
 
                 <input type="submit" id="enviar" value="ENVIAR">
@@ -65,7 +62,7 @@
         </div>
     </main>
 
-    <script src="js/contato.js"></script>
+    <script src="js/cadastro.js"></script>
 
     <script>
         const currentPage = window.location.pathname.split("/").pop();
